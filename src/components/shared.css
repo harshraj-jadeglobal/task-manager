@@ -1,0 +1,40 @@
+.ui-avatar {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+  letter-spacing: 0;
+}
+
+.ui-icon {
+  flex-shrink: 0;
+}
+
+.ui-lozenge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lozenge-todo {
+  background: var(--stat-todo-bg);
+  color: var(--stat-todo-fg);
+}
+
+.lozenge-prog {
+  background: var(--stat-prog-bg);
+  color: var(--stat-prog-fg);
+}
+
+.lozenge-done {
+  background: var(--stat-done-bg);
+  color: var(--stat-done-fg);
+}

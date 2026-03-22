@@ -1,0 +1,90 @@
+:root {
+  /* surfaces */
+  --bg-page: #F7F8F9;
+  --bg-neutral: #FFFFFF;
+  --bg-neutral-hov: #F1F2F4;
+  --bg-neutral-sunk: #F1F2F4;
+  --bg-selected: #E9F2FF;
+  --bg-nav-sidebar: #1C2B41;
+  --bg-nav-hov: #243547;
+  --bg-nav-active: #0C66E4;
+
+  /* borders */
+  --border: #DCDFE4;
+  --border-focus: #0052CC;
+
+  /* text */
+  --text-highest: #172B4D;
+  --text-high: #44546F;
+  --text-medium: #626F86;
+  --text-low: #8590A2;
+  --text-disabled: #B3BAC5;
+  --text-link: #0C66E4;
+  --text-inverse: #FFFFFF;
+  --text-nav-muted: #9FADBC;
+
+  /* brand */
+  --brand-blue: #0C66E4;
+  --brand-blue-bg: #E9F2FF;
+  --brand-blue-text: #0055CC;
+
+  /* priority */
+  --pri-high-bg: #FFEDEB; --pri-high-fg: #AE2A19;
+  --pri-med-bg: #FFF7D6; --pri-med-fg: #7F5F01;
+  --pri-low-bg: #DFFCF0; --pri-low-fg: #216E4E;
+
+  /* status */
+  --stat-todo-bg: #F1F2F4; --stat-todo-fg: #44546F;
+  --stat-prog-bg: #E9F2FF; --stat-prog-fg: #0055CC;
+  --stat-done-bg: #DFFCF0; --stat-done-fg: #216E4E;
+
+  /* type icons */
+  --type-bug-col: #E2483D;
+  --type-story-col: #2D9BF0;
+  --type-task-col: #4BCE97;
+}
+
+[data-theme='dark'] {
+  --bg-page: #0a0a0a;
+  --bg-neutral: #111111;
+  --bg-neutral-hov: #1a1a1a;
+  --bg-neutral-sunk: #0a0a0a;
+  --bg-nav-sidebar: #0d0d0d;
+  --bg-nav-hov: #1a1a1a;
+  --bg-nav-active: #0C66E4;
+
+  --border: #2a2a2a;
+  --border-focus: #579DFF;
+
+  --text-highest: #B6C2CF;
+  --text-high: #9FADBC;
+  --text-medium: #738496;
+  --text-low: #596773;
+  --text-disabled: #454F59;
+  --text-link: #579DFF;
+  --text-inverse: #1D2125;
+  --text-nav-muted: #596773;
+
+  --brand-blue: #579DFF;
+  --brand-blue-bg: #0B2345;
+  --brand-blue-text: #85B8FF;
+
+  --pri-high-bg: #42221F; --pri-high-fg: #F87462;
+  --pri-med-bg: #332500; --pri-med-fg: #F5CD47;
+  --pri-low-bg: #1C3329; --pri-low-fg: #4BCE97;
+
+  --stat-todo-bg: #2C333A; --stat-todo-fg: #9FADBC;
+  --stat-prog-bg: #0B2345; --stat-prog-fg: #85B8FF;
+  --stat-done-bg: #1C3329; --stat-done-fg: #4BCE97;
+
+  --type-bug-col: #F87462;
+  --type-story-col: #579DFF;
+  --type-task-col: #4BCE97;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-highest);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+}
