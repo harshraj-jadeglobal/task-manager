@@ -15,13 +15,13 @@
 
 .nav-item:hover {
   background: var(--bg-nav-hov);
-  color: #fff;
+  color: #ffffff;
 }
 
 .nav-item.active {
   background: var(--bg-nav-active);
-  color: #fff;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .nav-item.collapsed {

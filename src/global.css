@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -66,19 +66,25 @@ body {
 .ui-input {
   border-radius: 3px;
   font-size: 14px;
-  padding: 6px 10px;
+  padding: 8px 12px;
   outline: none;
   font-family: inherit;
-  transition: border-color .1s, box-shadow .1s;
+  transition: border-color .15s, box-shadow .15s, background .15s;
   width: 100%;
-  border-width: 2px;
-  border-style: solid;
+  border: 1px solid var(--border);
+  background-color: var(--bg-neutral);
+  color: var(--text-highest);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.ui-input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(87, 157, 255, 0.2);
 }
 
 .ui-select {
   border-radius: 3px;
   font-size: 14px;
-  padding: 6px 32px 6px 10px;
+  padding: 8px 32px 8px 12px;
   outline: none;
   cursor: pointer;
   font-family: inherit;
@@ -86,10 +92,19 @@ body {
   -webkit-appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23626F86' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  transition: border-color .1s;
-  border-width: 2px;
-  border-style: solid;
+  background-position: right 12px center;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+  border: 1px solid var(--border);
+  background-color: var(--bg-neutral);
+  color: var(--text-highest);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.ui-select:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(87, 157, 255, 0.2);
+}
+.ui-select:hover {
+  background-color: var(--bg-neutral-hov);
 }
 
 /* ── Filter pills ── */
@@ -104,6 +119,7 @@ body {
   border-width: 1.5px;
   border-style: solid;
   background: transparent;
+  color: var(--text-highest);
   cursor: pointer;
   font-family: inherit;
   transition: background .1s, border-color .1s, color .1s;
@@ -133,6 +149,7 @@ body {
   box-shadow: 0 8px 40px rgba(9, 30, 66, .25);
   animation: slideUp .18s;
   overflow: hidden;
+  background: var(--bg-neutral);
 }
 
 @keyframes slideUp {
@@ -176,7 +193,7 @@ body {
   border-color: transparent;
   border-radius: 3px;
   font-size: 13.5px;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 28px;
   outline: none;
   font-family: inherit;
   width: 220px;
@@ -197,6 +214,10 @@ body {
   border-radius: 3px;
   transition: opacity .1s, background .1s, color .1s;
   font-size: 13px;
+  color: var(--text-highest);
+}
+[data-theme='dark'] .row-action {
+  color: #ffffff;
 }
 
 .issue-row:hover .row-action { opacity: 1; }

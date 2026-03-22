@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NavItem from './NavItem';
+import logoUrl from '../../assets/logo.png';
 import './Sidebar.css';
 
 export default function Sidebar({ navActive, setNavActive }) {
@@ -16,11 +17,7 @@ export default function Sidebar({ navActive, setNavActive }) {
   return (
     <nav className={`sidebar ${sideCollapsed ? 'collapsed' : 'expanded'}`}>
       <div className={`sidebar-logo-row ${sideCollapsed ? 'collapsed' : 'expanded'}`}>
-        <div className="sidebar-logo">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M8 2L2 8l3 3 3-3 3 3 3-3L8 2z" fill="white" opacity=".9"/>
-          </svg>
-        </div>
+        <img src={logoUrl} alt="Logo" className="sidebar-image-logo" />
         {!sideCollapsed && <span className="sidebar-brand">TaskFlow</span>}
       </div>
 

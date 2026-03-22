@@ -1,7 +1,7 @@
-import TypeIcon from '../Icons/TypeIcon';
-import PriorityIcon from '../Icons/PriorityIcon';
-import Lozenge from '../Lozenge/Lozenge';
-import Avatar from '../Avatar/Avatar';
+import TypeIcon from '../../components/Icons/TypeIcon';
+import PriorityIcon from '../../components/Icons/PriorityIcon';
+import Lozenge from '../../components/Lozenge/Lozenge';
+import Avatar from '../../components/Avatar/Avatar';
 import { ago } from '../../utils/helpers';
 
 export default function DetailPanel({ selected, setSelected, updateStatus, deleteTask }) {
